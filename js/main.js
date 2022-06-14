@@ -15,6 +15,7 @@ async function apiRequest() {
     document.getElementById('alienExamples').innerText = data.notableExamples;
     document.getElementById('alienImage').src = data.image;
     document.getElementById('alienCaption').innerText = data.speciesName;
+    document.getElementById('alienImage').classList.remove('hidden');
   } catch (error) {
     console.log(error);
   }
